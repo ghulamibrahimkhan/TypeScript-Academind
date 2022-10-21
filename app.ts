@@ -16,8 +16,19 @@
 const person :{
     name : string;
     age : number
+    hobbies : string[]
 } = {
     'name':'Ibrahim',
-    'age' : 20
+    'age' : 20,
+    'hobbies': ['gaming','bodybuilding','coding']
 }
-console.log(person);
+// console.log(person.name);
+// console.log(person.age);
+
+let fpsGames: string[];
+fpsGames = ['csgo','valorant','overwatch']
+
+for (const hobby of person.hobbies){
+    console.log(hobby.toLocaleUpperCase());
+    
+}

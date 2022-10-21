@@ -11,6 +11,14 @@
 // console.log(person);
 var person = {
     'name': 'Ibrahim',
-    'age': 20
+    'age': 20,
+    'hobbies': ['gaming', 'bodybuilding', 'coding']
 };
-console.log(person);
+// console.log(person.name);
+// console.log(person.age);
+var fpsGames;
+fpsGames = ['csgo', 'valorant', 'overwatch'];
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby.toLocaleUpperCase());
+}
