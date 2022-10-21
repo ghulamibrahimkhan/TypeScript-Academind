@@ -9,20 +9,44 @@
 //     'age' : 20
 // }
 // console.log(person);
+// enum Acess {Admin, ReadOnly ,Author}; //enum
+// const person :{
+//     name : string;
+//     age : number
+//     hobbies : string[]
+//     role : [number, string, boolean] // tuple
+//     acess : number                   // enum
+// } = {
+//     'name':'Ibrahim',
+//     'age' : 20,
+//     'hobbies': ['gaming','bodybuilding','coding'],
+//     'role' : [1, 'author',true], // tuple
+//     'acess': Acess.Admin        // enum
+// }
+// console.log(person.role);            // tuple
+// // person.role.push("hero")          // tuple
+// person.role = [3,'csgo',false]       // typle
+// console.log(person.role);            // tuple
+// console.log(person)                  // tuple
+// // -----------------
+// let fpsGames: string[];
+// fpsGames = ['csgo','valorant','overwatch']
+// for (const hobby of person.hobbies){
+//     console.log(hobby.toLocaleUpperCase());
+// }
+//----------------------------
+// Enum
+var Acess;
+(function (Acess) {
+    Acess[Acess["Admin"] = 4] = "Admin";
+    Acess["ReadOnly"] = "read";
+    Acess[Acess["Author"] = 7] = "Author";
+})(Acess || (Acess = {}));
+;
 var person = {
     'name': 'Ibrahim',
     'age': 20,
     'hobbies': ['gaming', 'bodybuilding', 'coding'],
-    'role': [1, 'author', true] // tuple
+    'role': [1, 'author', true],
+    'acess': Acess.Author
 };
-console.log(person.role);
-// person.role.push("hero")
-person.role = [3, 'csgo', false];
-console.log(person.role);
-console.log(person);
-var fpsGames;
-fpsGames = ['csgo', 'valorant', 'overwatch'];
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby.toLocaleUpperCase());
-}
