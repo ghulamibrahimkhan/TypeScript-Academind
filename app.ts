@@ -17,14 +17,22 @@ const person :{
     name : string;
     age : number
     hobbies : string[]
+    role : [number, string, boolean] // tuple
 } = {
     'name':'Ibrahim',
     'age' : 20,
-    'hobbies': ['gaming','bodybuilding','coding']
+    'hobbies': ['gaming','bodybuilding','coding'],
+    'role' : [1, 'author',true] // tuple
 }
-// console.log(person.name);
-// console.log(person.age);
+console.log(person.role);
 
+// person.role.push("hero")
+person.role = [3,'csgo',false]
+
+console.log(person.role);
+console.log(person)
+
+// -----------------
 let fpsGames: string[];
 fpsGames = ['csgo','valorant','overwatch']
 
