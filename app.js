@@ -1,12 +1,16 @@
-function add(num1, num2, resStatus, phrase) {
-    var result = num1 + num2;
-    if (resStatus) {
-        return phrase + result;
-    }
-}
-var n1 = 3;
-var n2 = 6;
-var resStatus = true;
-var phrase = "Result is: ";
-var result = add(n1, n2, resStatus, phrase);
-console.log(result);
+// const person = {
+//     'name':'Ibrahim',
+//     'age' : 20
+// }
+// console.log(person);
+// // by this we can't acess object values
+// const person :object = {
+//     'name':'Ibrahim',
+//     'age' : 20
+// }
+// console.log(person);
+var person = {
+    'name': 'Ibrahim',
+    'age': 20
+};
+console.log(person);
