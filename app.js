@@ -50,3 +50,16 @@ var person = {
     'role': [1, 'author', true],
     'acess': Acess.Author
 };
+// ----------------
+// any
+var employee = [1, "bran", true];
+console.log(employee[2]);
+console.log(employee[1]);
+var data;
+data = {
+    'id': 1,
+    'name': 2,
+    'tasks': [1, 2, 4, "gg"]
+};
+console.log(data.id);
+console.log(data.tasks[3]);

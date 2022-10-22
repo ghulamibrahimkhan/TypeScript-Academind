@@ -56,3 +56,23 @@ const person  = {
     'role' : [1, 'author',true], // tuple
     'acess': Acess.Author
 }
+
+// ----------------
+// any
+
+let employee : any [] = [1, "bran", true]
+console.log(employee[2]);
+console.log(employee[1]);
+
+let data : {
+    id : any
+    name : any
+    tasks : any[]
+}
+data ={
+    'id': 1,
+    'name': 2,
+    'tasks': [1,2,4,"gg"]
+}
+console.log(data.id);
+console.log(data.tasks[3]);
